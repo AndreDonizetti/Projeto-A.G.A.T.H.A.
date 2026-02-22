@@ -99,4 +99,30 @@ button:hover {
 .menu-navegacao a:hover, .menu-navegacao a.active {
     color: #8b0000; /* Vermelho para a aba ativa */
     text-shadow: 0 0 5px #ff0000;
+}.login-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.login-box {
+    background-color: #111;
+    padding: 40px;
+    border: 2px solid #8b0000;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.2);
+}
+
+.login-box input {
+    background: #000;
+    border: 1px solid #444;
+    color: #00ff00;
+    padding: 10px;
+    width: 80%;
+    margin: 20px 0;
+    text-align: center;
+    font-family: 'Courier New', monospace;
 }
