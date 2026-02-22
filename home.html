@@ -1,4 +1,9 @@
-
+<script>
+    // Se não houver a marca de "logado", expulsa o usuário de volta para o login
+    if (sessionStorage.getItem("logado") !== "true") {
+        window.location.href = "index.html";
+    }
+</script>
 </body>
 </html><!DOCTYPE html>
 <html lang="pt-br">
@@ -15,7 +20,7 @@
         <p class="status">(Arquivos Gerais de Ameaças, Transtornos e Histórico Anormal)</p>
     </header>
 <nav class="menu-navegacao">
-    <a href="index.html" class="active">BESTIÁRIO</a>
+    <a href="home.html" class="active">BESTIÁRIO</a>
     <a href="itens.html">ITENS AMALDIÇOADOS</a>
     <a href="agentes.html">AGENTES</a>
 </nav>
