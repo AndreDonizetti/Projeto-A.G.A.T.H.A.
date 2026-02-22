@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>A.G.A.T.H.A. - Autenticação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+    <div class="login-box">
+        <h1>SISTEMA A.G.A.T.H.A.</h1>
+        <p class="status">DIGITE A CREDENCIAL DE ACESSO</p>
+        
+        <input type="password" id="senha" placeholder="SENHA DA ORDEM">
+        <button onclick="verificarAcesso()">ENTRAR</button>
+        
+        <p id="erro" style="color: #ff4444; margin-top: 10px; display: none;">ACESSO NEGADO: Credencial Inválida.</p>
+    </div>
+
+    <script>
+        function verificarAcesso() {
+            const senhaDefinida = "ordem"; // Você pode mudar sua senha aqui!
+            const inputSenha = document.getElementById("senha").value;
+
+            if (inputSenha === senhaDefinida) {
+                window.location.href = "home.html";
+            } else {
+                document.getElementById("erro").style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
