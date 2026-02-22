@@ -17,16 +17,18 @@
     </div>
 
     <script>
-        function verificarAcesso() {
-            const senhaDefinida = "ordem"; // Você pode mudar sua senha aqui!
-            const inputSenha = document.getElementById("senha").value;
+       function verificarAcesso() {
+    const senhaDefinida = "freitas";
+    const inputSenha = document.getElementById("senha").value;
 
-            if (inputSenha === senhaDefinida) {
-                window.location.href = "home.html";
-            } else {
-                document.getElementById("erro").style.display = "block";
-            }
-        }
+    if (inputSenha === senhaDefinida) {
+        // Salva que o acesso foi permitido nesta aba
+        sessionStorage.setItem("logado", "true");
+        window.location.href = "home.html";
+    } else {
+        document.getElementById("erro").style.display = "block";
+    }
+}
     </script>
 </body>
 </html>
